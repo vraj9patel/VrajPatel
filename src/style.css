@@ -1,14 +1,14 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
+    rgb(255, 255, 255),
+    rgb(255, 255, 255)
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
+    rgba(255, 255, 255, 0.98),
+    rgba(255, 255, 255, 0.98)
   );
 
   --imp-text-color: #341ce9;
@@ -32,8 +32,8 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
-  background-image: url(./Assets/pre.svg);
+  background-color: #ffffff;
+  background-image: url(./Assets/pre.svg); 
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -57,7 +57,7 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #92e1f3;
+  background: #fafafa;
 }
 
 /* Handle */
@@ -76,7 +76,7 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: #ffffff !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -151,7 +151,7 @@ button:focus {
   }
 }
 .navbar-brand {
-  color: rgb(250, 250, 250) !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 .logo {
@@ -160,7 +160,7 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
-  color: white !important;
+  color: rgb(0, 0, 0) !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -251,22 +251,24 @@ button:focus {
 }
 
 .home-header {
-  padding-top: 80px !important;
+  padding-top: 60px !important;
 }
 
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: url(./Assets/master-img.jpeg);
+  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
+  background-color: white;
   background-position: top center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
+  height: 100vh;
 }
 
 .home-content {
   padding: 9rem 0 2rem !important;
-  color: whitesmoke;
+  color: rgb(10, 9, 9);
   text-align: left;
 }
 
@@ -281,17 +283,17 @@ button:focus {
 }
 
 .main-name {
-  color: #2d33eb;
+  color: #341ce9;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #21de50 !important;
+  color: #26d723 !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #21de50 !important;
+  color: #26d723 !important;
 }
 
 @media (max-width: 767px) {
@@ -319,16 +321,13 @@ button:focus {
 
 .home-about-section {
   position: relative;
-  z-index: -1;
-  background-image: url(./Assets/master-img.jpeg);
-  background-position: top center;
-  background-repeat: repeat;
+  background-color: white;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
 }
 
 .home-about-description {
-  color: white !important;
+  color: rgb(18, 18, 18) !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
@@ -343,7 +342,7 @@ button:focus {
 .home-about-social {
   text-align: center !important;
   padding-top: 25px;
-  color: white !important;
+  color: rgb(8, 8, 8) !important;
 }
 
 .home-about-social-links {
@@ -362,7 +361,7 @@ button:focus {
   text-align: center !important;
   font-size: 1.2em !important;
   line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
+  background: #d6d6d6 !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
 }
@@ -375,7 +374,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #301cc9;
+  background: #2c1eca;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -383,13 +382,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #400dd7;
+  box-shadow: 0 0 15px #3a19bb;
 }
 
 .home-social-icons:hover {
-  color: #2c1fde;
-  box-shadow: 0 0 5px #2c1fde;
-  text-shadow: 0 0 2px #2c1fde;
+  color: #230bd8;
+  box-shadow: 0 0 5px #230bd8;
+  text-shadow: 0 0 2px #230bd8;
 }
 
 .social-icons {
@@ -399,7 +398,7 @@ button:focus {
 }
 
 .icon-colour {
-  color: #2918e5 !important;
+  color: #2b0dec !important;
 }
 
 /* --------- */
@@ -450,7 +449,7 @@ button:focus {
 /* --------- */
 .project-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 80px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
 }
@@ -464,8 +463,8 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
-  color: white !important;
+  box-shadow: 0 4px 5px 3px rgba(25, 48, 225, 0.459) !important;
+  color: rgb(0, 0, 0) !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
@@ -474,7 +473,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 4px 5px rgba(61, 45, 231, 0.561) !important;
 }
 
 .blog-card {
@@ -487,7 +486,7 @@ button:focus {
 
 .blog-card-view {
   background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
+  box-shadow: 0 3px 3px 2px rgba(42, 24, 241, 0.459) !important;
   color: white !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
@@ -505,7 +504,7 @@ button:focus {
 .blog-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
+  box-shadow: 0 3px 3px 5px rgba(75, 47, 230, 0.65) !important;
 }
 
 .card-img-top {
@@ -522,22 +521,22 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  background-color: #2622e7 !important;
+  border-color: #2622e7 !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  background-color: #2c14e1d7 !important;
+  border-color: #2c14e1d7 !important;
 }
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
 }
 .project-heading {
-  color: white !important;
-  font-size: 2.3em !important;
+  color: rgb(0, 0, 0) !important;
+  font-size: 1.8em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
 }
@@ -548,23 +547,23 @@ button:focus {
 
 .about-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 30px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
-  color: white !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 .tech-icons {
-  font-size: 4.5em !important;
+  font-size: 2.25em !important;
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 1.7px solid rgba(33, 233, 83, 0.637) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
   display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  box-shadow: 4px 5px 4px 3px rgba(14, 246, 37, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
 }
@@ -578,7 +577,7 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  border: 2.2px solid rgba(85, 189, 114, 0.883) !important;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -587,7 +586,7 @@ button:focus {
 
 .quote-card-view {
   border: none !important;
-  color: white !important;
+  color: rgb(0, 0, 0) !important;
   background-color: transparent !important;
 }
 
@@ -744,4 +743,60 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+/* --------- */
+/* Cirular Progressbar */
+/* --------- */
+
+.CircularProgressbar {
+  /*
+   * This fixes an issue where the CircularProgressbar svg has
+   * 0 width inside a "display: flex" container, and thus not visible.
+   */
+  width: 100%;
+  /*
+   * This fixes a centering issue with CircularProgressbarWithChildren:
+   * https://github.com/kevinsqi/react-circular-progressbar/issues/94
+   */
+  vertical-align: middle;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #2d48ce;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease 0s;
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: #d6d6d6;
+  /* Used when trail is not full diameter, i.e. when props.circleRatio is set */
+  stroke-linecap: round;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #383b9b;
+  font-size: 20px;
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+
+.CircularProgressbar .CircularProgressbar-background {
+  fill: #d6d6d6;
+}
+
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-background {
+  fill: #383b9b;
+}
+
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-text {
+  fill: #fff;
+}
+
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-path {
+  stroke: #fff;
+}
+
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-trail {
+  stroke: transparent;
 }
