@@ -36,7 +36,7 @@ function Projects() {
               imgPath={bitsOfCode}
               isBlog={false}
               title="Assistant Memo"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              description="Flutter App that allows the user to record audio files save them to a database have the audios transcribed and displayed back to the user. Users can star a note, add or update a category for the note, have a playback of the audio of the specific note, and delete the note."
               ghLink=""
               demoLink=""
             />
